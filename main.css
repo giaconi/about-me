@@ -1,0 +1,11 @@
+.container {
+  width: 100vh;
+  height: 100vh;
+  position: absolute;
+  background-color: black;
+}
+img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}

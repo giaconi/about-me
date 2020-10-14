@@ -30,16 +30,12 @@ nav {
   font-size: 1.2rem;
 }
 
-.big-text {
+.update-message {
   position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -30%);
+  top: 70%;
   font-size: 5rem;
   font-family: "Roboto";
-  color: rgba(14, 14, 14, 0.822);
-  justify-content: center;
-  align-items: center;
+  color: rgba(14, 14, 14, 1);
 }
 
 .intro {
@@ -84,7 +80,7 @@ h2.a {
 }
 
 a {
-  color: #dcf0af;
+  color: #fcff59;
   text-decoration: none;
 }
 
@@ -94,4 +90,8 @@ a {
 
 nav img {
   width: 2rem;
+}
+
+#update {
+  color: rgb(204, 204, 204);
 }

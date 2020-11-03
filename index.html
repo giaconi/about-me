@@ -2,27 +2,42 @@
 <html>
 	<head>
 		<title>Iaconi Gheorghe | Web Dev</title>
-		<meta charset="utf-8" />
+    <meta charset="utf-8" />
 		<link rel="icon" type="image/png" href="./assets/images/favicon.ico"/>
-		<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		<link
 		href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
 		rel="stylesheet"
 		/>
 	</head>
-	<body class="container">
+	<body>
 		<main>
-      <section class="landing">
-        <nav>
+      <section class="laanding">
+        <nava>
           <img src="./assets/images/logo.png" id="logo"/>
-          <ul class="nav-links">
-            <li><a href="mailto:ghiaconi@gmail.com" target="_blank"><img src="./assets/svg's/email.svg"/></a></li>
-						<li><a href="https://www.linkedin.com/in/giaconi/" target="_blank"><img src="./assets/svg's/linkedin.svg"/></a></li>
-            <li><a href="https://github.com/giaconi" target="_blank"><img src="./assets/svg's/github.svg"/></a></li>
+          <ul class="nav-links nav-item">
+            <li><a href="mailto:ghiaconi@gmail.com" target="_blank"><i class="fas fa-envelope nav-item"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/giaconi/" target="_blank"><i class="fab fa-linkedin nav-item"></i></a></li>
+            <li><a href="https://github.com/giaconi" target="_blank"><i class="fab fa-github nav-item"></i></a></li>
           </ul>
-        </nav>
-      <h2 class="update-message"><span id="update">page under update !</span><span id="text-after-update"></span> Meanwhile, check my <a href="https://github.com/giaconi" target="_blank"> github</a> for other projects I'm working on.</span></h2>
+        </nava>
+        <div class="about-me bottom m-5 fixed-bottom">
+            <button class="hover m-5 float-right btn btn-outline-dark btn-lg">
+              <i class="fas fa-user-alt"></i>
+            </button>
+            <button class="joke hover m-5 btn btn-outline-dark btn-lg">
+              <i class="far fa-laugh-squint"></i>
+            </button>
+        </div>
+        <div class="cursor"></div>
       </section>
+      <footer id="sticky-footer" class="py-4 footer text-white-50">
+        <div class="container text-center">
+          <small> Copyright &copy;2020 All rights Reserved.</small>
+        </div>
+      </footer>
     </main>
     <div class="intro">
       <div class="intro-text">
@@ -41,11 +56,30 @@
       </div>
     </div>
     <div class="slider"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Something about me</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Hello visitor :) I'm George, a nice dude  and during the next weeks I'll do my best in finishing what I've started some time ago - be a developer.
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
-		<script src="app.js"></script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>	
 </html>
